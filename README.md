@@ -13,6 +13,7 @@ I intended to create a simple phishing campaign infrastructure that would allow 
 
 <br>
 * Once victim clicks the button to reset their password - the malicious website opens up to capture their credentials (email is taken from the URL and old and new passwords - from the form).
+<br>
 
 ![](spoofedWebsite.png)
 
