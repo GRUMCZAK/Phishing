@@ -8,18 +8,14 @@ I intended to create a simple phishing campaign infrastructure that would allow 
 * The attacker provides a list of victims in recipients.json file.
 * The attacker sends a message to the victim(s) by running the index.js file.
 * Every victim receives the falsified warning regarding their unexpected login. There are however some limitations enforced by Google when it comes to formatting HTML embedded links, so the look of the message is not perfect.
+  
+<br>![](passwordReset.png)
+* Once victim clicks the button to reset their password - the malicious website opens up to capture their credentials (email is taken from the URL and old and new passwords - from the form).<br>
+  <br>![](spoofedWebsite.png)
 
-![](passwordReset.png)
+* Thanks to the Web3Forms API, an attacker gets the victims' credentials straight into their email.<br>
+ <br>![](receivedCredentials.png)
 
-<br>
-* Once victim clicks the button to reset their password - the malicious website opens up to capture their credentials (email is taken from the URL and old and new passwords - from the form).
-<br>
-
-![](spoofedWebsite.png)
-
-* Thanks to the Web3Forms API, an attacker gets the victims' credentials straight into their email.
-
-![](receivedCredentials.png)
 <br>
 And there we have it!
 
